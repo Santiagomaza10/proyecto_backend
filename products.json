@@ -1,1 +1,92 @@
-[{"id":1,"title":"collar","description":"collar de jade","price":1500,"thumbnail":"Sin imagen","code":"collar1","stock":50},{"id":2,"title":"pulsera","description":"pulsera de ojo de tigre","price":800,"thumbnail":"Sin imagen","code":"pulsera1","stock":30},{"id":3,"title":"aros","description":"aros de turmalina","price":950,"thumbnail":"Sin imagen","code":"aros1","stock":75},{"id":4,"title":"atrapasueños","description":"atrapasueños artesanal","price":1800,"thumbnail":"Sin imagen","code":"atrapasueños1","stock":15},{"id":5,"title":"piedra citrino","description":"piedra de citrino","price":600,"thumbnail":"Sin imagen","code":"citrino1","stock":60},{"id":6,"title":"llavero","description":"llavero de jade","price":1100,"thumbnail":"Sin imagen","code":"llavero1","stock":35},{"id":7,"title":"tobillera","description":"tobillera con detalles de acero","price":1750,"thumbnail":"Sin imagen","code":"tobillera1","stock":10},{"id":8,"title":"piercing de acero","description":"piercing de acero quirurgico","price":2000,"thumbnail":"Sin imagen","code":"piercing1","stock":120},{"id":9,"title":"aros con plumas","description":"aros con trabajo realizado con plumas","price":2850,"thumbnail":"Sin imagen","code":"aros2","stock":15},{"id":10,"title":"colgante de sodalita","description":"colgante con pieda sodalita","price":2500,"thumbnail":"Sin imagen","code":"colgante1","stock":55}]
+[
+  {
+    "id": 1,
+    "title": "collar",
+    "description": "collar de jade",
+    "price": 1500,
+    "thumbnail": "Sin imagen",
+    "code": "collar1",
+    "stock": 50
+  },
+  {
+    "id": 2,
+    "title": "pulsera",
+    "description": "pulsera de ojo de tigre",
+    "price": 800,
+    "thumbnail": "Sin imagen",
+    "code": "pulsera1",
+    "stock": 30
+  },
+  {
+    "id": 3,
+    "title": "aros",
+    "description": "aros de turmalina",
+    "price": 950,
+    "thumbnail": "Sin imagen",
+    "code": "aros1",
+    "stock": 75
+  },
+  {
+    "id": 4,
+    "title": "atrapasueños",
+    "description": "atrapasueños artesanal",
+    "price": 1800,
+    "thumbnail": "Sin imagen",
+    "code": "atrapasueños1",
+    "stock": 15
+  },
+  {
+    "id": 5,
+    "title": "piedra citrino",
+    "description": "piedra de citrino",
+    "price": 600,
+    "thumbnail": "Sin imagen",
+    "code": "citrino1",
+    "stock": 60
+  },
+  {
+    "id": 6,
+    "title": "llavero",
+    "description": "llavero de jade",
+    "price": 1100,
+    "thumbnail": "Sin imagen",
+    "code": "llavero1",
+    "stock": 35
+  },
+  {
+    "id": 7,
+    "title": "tobillera",
+    "description": "tobillera con detalles de acero",
+    "price": 1750,
+    "thumbnail": "Sin imagen",
+    "code": "tobillera1",
+    "stock": 10
+  },
+  {
+    "id": 8,
+    "title": "piercing de acero",
+    "description": "piercing de acero quirurgico",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "piercing1",
+    "stock": 120
+  },
+  {
+    "id": 9,
+    "title": "aros con plumas",
+    "description": "aros con trabajo realizado con plumas",
+    "price": 2850,
+    "thumbnail": "Sin imagen",
+    "code": "aros2",
+    "stock": 15
+  },
+  {
+    "id": 10,
+    "title": "colgante de sodalita",
+    "description": "colgante con pieda sodalita",
+    "price": 2500,
+    "thumbnail": "Sin imagen",
+    "code": "colgante1",
+    "stock": 55
+  }
+]

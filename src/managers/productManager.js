@@ -110,31 +110,4 @@ export default class ProductManager {
 
 const manager = new ProductManager("./products.json");
 
-const product1 = {
-  title: "producto de prueba",
-  description: "Este es un producto de prueba",
-  price: 200,
-  code: "abc123",
-  thumbnail: "Sin imagen",
-  stock: 25,
-};
-
-const product2 = {
-  title: "producto de prueba 2",
-  description: "Este es otro producto de prueba",
-  price: 500,
-  thumbnail: "Sin imagen",
-  code: "abc1234567789",
-  stock: 50,
-};
-
-const product3 = {
-  title: "producto de prueba 3",
-  description: "Este es otro producto de prueba3",
-  price: 500,
-  thumbnail: "Sin imagen",
-  code: "abc1234567789sdfafsdfs",
-  stock: 50,
-};
-
 
