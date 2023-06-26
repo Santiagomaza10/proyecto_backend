@@ -20,10 +20,10 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:idProduct", async (req, res) => {
+router.get("/:pid", async (req, res) => {
   try {
-    const { idProduct } = req.params;
-    const product = await productManager.getProductById(Number(idProduct));
+    const { pid } = req.params;
+    const product = await productManager.getProductById(Number(pid));
     if (product) {
       res.json(product);
     } else {
@@ -52,11 +52,11 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.put("/:idProduct", async (req, res) => {
+router.put("/:pid", async (req, res) => {
   try {
     const product = req.body;
-    const { idProduct } = req.params;
-    const idNumber = Number(idProduct);
+    const { pid } = req.params;
+    const idNumber = Number(pid);
     const productExist = await productManager.getProductById(idNumber);
 
     if (productExist) {
@@ -70,10 +70,10 @@ router.put("/:idProduct", async (req, res) => {
   }
 });
 
-router.delete("/:idProduct", async (req, res) => {
+router.delete("/:pid", async (req, res) => {
   try {
-    const { idProduct } = req.params;
-    const idNumber = Number(idProduct);
+    const { pid } = req.params;
+    const idNumber = Number(pid);
     const productExist = await productManager.getProductById(idNumber);
     if (productExist) {
       await productManager.deleteProduct(idNumber);
