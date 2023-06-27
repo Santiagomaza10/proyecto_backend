@@ -58,31 +58,36 @@ export const getCartById = async (id) => {
 };
 
 export const saveProductToCart = async (cartId, prodId) => {
-  const cartsFile = await getAllCarts();
-  const cart = cartsFile.find((cart) => cart.id === cartId);
+  try {
+    const cartsFile = await getAllCarts();
+    const cart = cartsFile.find((cart) => cart.id === cartId);
 
-  const productsJSON = await fs.promises.readFile(
-    "../../products.json",
-    "utf-8"
-  );
-  const productsJs = JSON.parse(productsJSON);
-  const prodExist = productsJs.find((prod) => prod.id === prodId);
+    const productsJSON = await fs.promises.readFile(
+      "../../products.json",
+      "utf-8"
+    );
+    const productsJs = JSON.parse(productsJSON);
+    const prodExist = productsJs.find((prod) => prod.id === prodId);
 
-  if (prodExist) {
-    const prodInCart = cart.products.find((prod) => prod.id === prodId);
+    if (prodExist) {
+      const prodInCart = cart.products.find((prod) => prod.id === prodId);
 
-    if (prodInCart) {
-      prodInCart.quantity += 1;
+      if (prodInCart) {
+        prodInCart.quantity += 1;
+      } else {
+        const prod = {
+          id: prodId,
+          quantity: 1,
+        };
+        cart.products.push(prod);
+      }
+      await fs.promises.writeFile(pathFile, JSON.stringify(cartsFile));
+      return cart;
     } else {
-      const prod = {
-        id: prodId,
-        quantity: 1,
-      };
-      cart.products.push(prod);
+      return console.log("El producto ingresado no existe");
     }
-    await fs.promises.writeFile(pathFile, JSON.stringify(cartsFile));
-    return cart;
-  } else {
-    return console.log("el producto ingresado no existe");
+  } catch (error) {
+    console.log(error);
   }
 };
+
