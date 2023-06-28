@@ -63,7 +63,7 @@ export const saveProductToCart = async (cartId, prodId) => {
     const cart = cartsFile.find((cart) => cart.id === cartId);
 
     const productsJSON = await fs.promises.readFile(
-      "../../products.json",
+      __dirname + "/db/products.json",
       "utf-8"
     );
     const productsJs = JSON.parse(productsJSON);
