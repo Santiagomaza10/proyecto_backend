@@ -1,6 +1,8 @@
 import fs from "fs";
 import { __dirname } from "../utils.js";
 
+const pathFile = __dirname + "/db/products.json";
+
 export default class ProductManager {
   constructor(path) {
     this.path = path;
@@ -13,7 +15,8 @@ export default class ProductManager {
       !!prod.price &&
       !!prod.code &&
       !!prod.thumbnail &&
-      !!prod.stock
+      !!prod.stock &&
+      !!prod.status
     ) {
       return true;
     }
@@ -62,6 +65,7 @@ export default class ProductManager {
       if (fs.existsSync(this.path)) {
         const products = await fs.promises.readFile(this.path, "utf-8");
         const productsJS = JSON.parse(products);
+        console.log(productsJS)
         return productsJS;
       } else {
         return [];
@@ -109,4 +113,4 @@ export default class ProductManager {
   }
 }
 
-const manager = new ProductManager("./products.json");
+const manager = new ProductManager(pathFile);

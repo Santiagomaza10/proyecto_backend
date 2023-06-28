@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "collar",
+    "description": "collar de jade",
+    "price": 1500,
+    "thumbnail": ["./src/imgs/imgprod1.jpg"],
+    "code": "collar1",
+    "stock": 50,
+    "status": true
+  },
+  {
+    "id": 2,
+    "title": "pulsera",
+    "description": "pulsera de ojo de tigre",
+    "price": 800,
+    "thumbnail": ["./src/imgs/imgprod2.jpg"],
+    "code": "pulsera1",
+    "stock": 30,
+    "status": true
+  },
+  {
+    "id": 3,
+    "title": "aros",
+    "description": "aros de turmalina",
+    "price": 950,
+    "thumbnail": ["./src/imgs/imgprod3.jpg"],
+    "code": "aros1",
+    "stock": 75,
+    "status": true
+  },
+  {
+    "id": 4,
+    "title": "atrapasueños",
+    "description": "atrapasueños artesanal",
+    "price": 1800,
+    "thumbnail": ["./src/imgs/imgprod4.jpg"],
+    "code": "atrapasueños1",
+    "stock": 15,
+    "status": true
+  },
+  {
+    "id": 5,
+    "title": "piedra citrino",
+    "description": "piedra de citrino",
+    "price": 600,
+    "thumbnail": ["./src/imgs/imgprod5.jpg"],
+    "code": "citrino1",
+    "stock": 60,
+    "status": true
+  },
+  {
+    "id": 6,
+    "title": "llavero",
+    "description": "llavero de jade",
+    "price": 1100,
+    "thumbnail": ["./src/imgs/imgprod6.jpg"],
+    "code": "llavero1",
+    "stock": 35,
+    "status": true
+  },
+  {
+    "id": 7,
+    "title": "tobillera",
+    "description": "tobillera con detalles de acero",
+    "price": 1750,
+    "thumbnail": ["./src/imgs/imgprod7.jpg"],
+    "code": "tobillera1",
+    "stock": 10,
+    "status": true
+  },
+  {
+    "id": 8,
+    "title": "piercing de acero",
+    "description": "piercing de acero quirurgico",
+    "price": 2000,
+    "thumbnail": ["./src/imgs/imgprod8.jpg"],
+    "code": "piercing1",
+    "stock": 120,
+    "status": true
+  },
+  {
+    "id": 9,
+    "title": "aros con plumas",
+    "description": "aros con trabajo realizado con plumas",
+    "price": 2850,
+    "thumbnail": ["./src/imgs/imgprod9.jpg"],
+    "code": "aros2",
+    "stock": 15,
+    "status": true
+  },
+  {
+    "id": 10,
+    "title": "colgante de sodalita",
+    "description": "colgante con pieda sodalita",
+    "price": 2500,
+    "thumbnail": ["./src/imgs/imgprod10.jpg"],
+    "code": "colgante1",
+    "stock": 55,
+    "status": true
+  }
+]

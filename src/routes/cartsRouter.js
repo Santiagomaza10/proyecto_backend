@@ -22,20 +22,33 @@ router.get("/:cid", async (req, res) => {
   }
 });
 
-router.post("/:cid/products/:pid", (req, res) => {
+router.post("/:cid/products/:pid", async (req, res) => {
   try {
-    const {cid} = req.params;
-    const {pid} = req.params;
-    /* const prodToCart =  */saveProductToCart(cid, pid)
-/*     if (prodToCart) {
-        res.json(prodToCart)
-    } else {
-        res.status(400).json({message: "prod or cart not found"})
-    }
- */
+    const {cid, pid} = req.params;
+    const cart = await saveProductToCart(Number(cid),Number(pid))
+
+    res.json(cart)
   } catch (error) {
     res.status(404).json({ message: error.message });
   }
 });
 
+
 export default router;
+
+
+/* import ProductManager from "../managers/productManager.js";
+
+const productManager = new ProductManager("./products.json");
+ */
+/* router.post("/:cid/products/:pid", async (req, res) => {
+  try {
+    const {cid, pid} = req.params;
+    const products = await productManager.getProducts();
+
+    res.json(products)
+
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+}); */
