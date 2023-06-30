@@ -4,7 +4,7 @@
     "title": "collar",
     "description": "collar de jade",
     "price": 1500,
-    "thumbnail": ["./src/imgs/imgprod1.jpg"],
+    "thumbnail": ["../imgs/imgprod1.jpg"],
     "code": "collar1",
     "stock": 50,
     "status": true
@@ -14,7 +14,7 @@
     "title": "pulsera",
     "description": "pulsera de ojo de tigre",
     "price": 800,
-    "thumbnail": ["./src/imgs/imgprod2.jpg"],
+    "thumbnail": ["../imgs/imgprod2.jpg"],
     "code": "pulsera1",
     "stock": 30,
     "status": true
@@ -24,7 +24,7 @@
     "title": "aros",
     "description": "aros de turmalina",
     "price": 950,
-    "thumbnail": ["./src/imgs/imgprod3.jpg"],
+    "thumbnail": ["../imgs/imgprod3.jpg"],
     "code": "aros1",
     "stock": 75,
     "status": true
@@ -34,7 +34,7 @@
     "title": "atrapasueños",
     "description": "atrapasueños artesanal",
     "price": 1800,
-    "thumbnail": ["./src/imgs/imgprod4.jpg"],
+    "thumbnail": ["../imgs/imgprod4.jpg"],
     "code": "atrapasueños1",
     "stock": 15,
     "status": true
@@ -44,7 +44,7 @@
     "title": "piedra citrino",
     "description": "piedra de citrino",
     "price": 600,
-    "thumbnail": ["./src/imgs/imgprod5.jpg"],
+    "thumbnail": ["../imgs/imgprod5.jpg"],
     "code": "citrino1",
     "stock": 60,
     "status": true
@@ -54,7 +54,7 @@
     "title": "llavero",
     "description": "llavero de jade",
     "price": 1100,
-    "thumbnail": ["./src/imgs/imgprod6.jpg"],
+    "thumbnail": ["../imgs/imgprod6.jpg"],
     "code": "llavero1",
     "stock": 35,
     "status": true
@@ -64,7 +64,7 @@
     "title": "tobillera",
     "description": "tobillera con detalles de acero",
     "price": 1750,
-    "thumbnail": ["./src/imgs/imgprod7.jpg"],
+    "thumbnail": ["../imgs/imgprod7.jpg"],
     "code": "tobillera1",
     "stock": 10,
     "status": true
@@ -74,7 +74,7 @@
     "title": "piercing de acero",
     "description": "piercing de acero quirurgico",
     "price": 2000,
-    "thumbnail": ["./src/imgs/imgprod8.jpg"],
+    "thumbnail": ["../imgs/imgprod8.jpg"],
     "code": "piercing1",
     "stock": 120,
     "status": true
@@ -84,7 +84,7 @@
     "title": "aros con plumas",
     "description": "aros con trabajo realizado con plumas",
     "price": 2850,
-    "thumbnail": ["./src/imgs/imgprod9.jpg"],
+    "thumbnail": ["../imgs/imgprod9.jpg"],
     "code": "aros2",
     "stock": 15,
     "status": true
@@ -94,7 +94,7 @@
     "title": "colgante de sodalita",
     "description": "colgante con pieda sodalita",
     "price": 2500,
-    "thumbnail": ["./src/imgs/imgprod10.jpg"],
+    "thumbnail": ["../imgs/imgprod10.jpg"],
     "code": "colgante1",
     "stock": 55,
     "status": true
