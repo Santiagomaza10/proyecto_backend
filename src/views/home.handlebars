@@ -1,0 +1,14 @@
+
+<div>
+    {{#if products.length}}
+        <h1>Product list:</h1>
+        <ul>
+        {{#each products}}
+            <li>Title: {{title}}<br>Description: {{description}}<br>Stock: {{stock}}<br>Price: {{price}}</li><br>
+        {{/each}}
+        </ul>
+    {{else}}
+        <h1>Product list:</h1>
+        <p>No products created!</p>
+    {{/if}}
+</div>
