@@ -1,4 +1,17 @@
-const socketClient = io()
+const socket = io();
+
+socket.on("arrayProducts", (array) => {
+    let products = "";
+    array.forEach(product => {
+        products += `
+            Producto: ${product.title}
+            <br>Descripción: ${product.description}
+            <br>Precio: ${product.price}
+            <br>Stock: ${product.stock}
+            <br>`;
+    });
+    document.getElementById("products").innerHTML = products;
+})
 
 const form = document.getElementById("form");
 const inputTitle = document.getElementById("title");
@@ -8,24 +21,19 @@ const inputThumbnail = document.getElementById("thumbnail");
 const inputCode = document.getElementById("code");
 const inputStock = document.getElementById("stock");
 const inputStatus = document.getElementById("status");
-const btn = document.addEventListener("send")
-const output = document.addEventListener("output")
+const btn = document.getElementById("send");
+const products = document.getElementById("products");
 
-form.onsubmit = (e) => {
-    e.preventDefault();
-    const title = inputTitle.value;
-    const description = inputDescription.value;
-    const price = inputPrice.value;
-    const thumbnail = inputThumbnail.value;
-    const code = inputCode.value;
-    const stock = inputStock.value;
-    const status = inputStatus.value;
-    socketClient.emit("newProduct", {title,description,price,thumbnail,code,stock,status})
+form.onsubmit = (send) => {
+    send.preventDefault();
+    const newProduct = {
+        title: inputTitle.value,
+        description: inputDescription.value,
+        price: inputPrice.value,
+        code: inputCode.value,
+        stock: inputStock.value,
+        status: inputStatus.value
+    }
+    socket.emit("newProduct", newProduct)
 }
 
-socketClient.on ("realTimeProducts", (data) => {
-    const realTimeProducts = data.map((prod) => {
-        return `<li>Title: ${prod.title}<br>Description: ${prod.description}Price: ${prod.price}</li><br>`
-    })
-    output.innerHTML = realTimeProducts
-})

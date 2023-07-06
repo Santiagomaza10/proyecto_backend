@@ -1,18 +1,25 @@
+<h2>Realtime products</h2>
+<div id="products"></div> {{!-- el le puso output y es donde se van a mostrar los mensajes --}}
+
 <h2>Add products</h2>
 
-<form id="form">
-    <label for="">Title:</label> <input type="text" name="title" id="title">
-    <label for="">Description:</label> <input type="text" name="description" id="description">
-    <label for="">Price:</label> <input type="text" name="price" id="price">
-    <label for="">Thumbnail:</label> <input type="text" name="thumbnail" id="thumbnail">
-    <label for="">Code:</label> <input type="text" name="code" id="code">
-    <label for="">Stock:</label> <input type="text" name="stock" id="stock">
-    <label for="">Status:</label> <input type="text" name="status" id="status">
-    <button id="send">Send</button>
+<form id="form" method="post">
+    <label for="">Title:</label> 
+    <input type="text" name="title" id="title">
+    <label for="">Description:</label> 
+    <input type="text" name="description" id="description">
+    <label for="">Price:</label> 
+    <input type="text" name="price" id="price">
+    <label for="">Thumbnail:</label> 
+    <input type="text" name="thumbnail" id="thumbnail">
+    <label for="">Code:</label> 
+    <input type="text" name="code" id="code">
+    <label for="">Stock:</label> 
+    <input type="text" name="stock" id="stock">
+    <label for="">Status:</label> 
+    <input type="text" name="status" id="status">
+    <button id="send">Create product</button>
 </form>
-
-<h2>Realtime products</h2>
-<div id="output"></div>
 
 <script src="/socket.io/socket.io.js" charset="utf-8"></script>
 <script src="index.js" charset="utf-8"></script>
