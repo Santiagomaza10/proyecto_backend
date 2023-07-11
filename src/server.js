@@ -38,7 +38,7 @@ socketServer.on("connection", async (socket) => {
     console.log(`Usuario desconectado`);
   });
 
-  socket.emit("arrayproducts", await productManager.getProducts())
+  socket.emit("arrayProducts", await productManager.getProducts())
 
   socket.on('newProduct', async (obj) => {
       await productManager.addProduct(obj);
