@@ -8,6 +8,7 @@ socket.on("arrayProducts", (array) => {
             <br>Descripción: ${product.description}
             <br>Precio: ${product.price}
             <br>Stock: ${product.stock}
+            <br>
             <br>`;
     });
     document.getElementById("products").innerHTML = products;
